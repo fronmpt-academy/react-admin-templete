@@ -14,7 +14,7 @@ export type IPostItem = {
     name: string;
     avatarUrl: string;
   };
-  favoritePerson: Array<{
+  favoritePerson?: Array<{
     name: string;
     avatarUrl: string;
   }>;
