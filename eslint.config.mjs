@@ -6,6 +6,7 @@ import importPlugin from 'eslint-plugin-import';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import perfectionistPlugin from 'eslint-plugin-perfectionist';
 import unusedImportsPlugin from 'eslint-plugin-unused-imports';
+import boundaries from 'eslint-plugin-boundaries';
 
 // ----------------------------------------------------------------------
 
@@ -178,6 +179,39 @@ export const customConfig = {
 
 // ----------------------------------------------------------------------
 
+export const boundariesConfig = {
+  plugins: { boundaries },
+  settings: {
+    'boundaries/elements': [
+      { type: 'app',      pattern: ['src/app/**'] },
+      { type: 'pages',    pattern: ['src/pages/**'] },
+      { type: 'widgets',  pattern: ['src/widgets/**'] },
+      { type: 'features', pattern: ['src/features/**'] },
+      { type: 'entities', pattern: ['src/entities/**'] },
+      { type: 'shared',   pattern: ['src/shared/**'] },
+    ],
+    'boundaries/ignore': ['**/*.test.*', '**/*.spec.*'],
+  },
+  rules: {
+    'boundaries/element-types': [
+      2,
+      {
+        default: 'disallow',
+        rules: [
+          { from: 'app',      allow: ['pages', 'widgets', 'features', 'entities', 'shared'] },
+          { from: 'pages',    allow: ['widgets', 'features', 'entities', 'shared'] },
+          { from: 'widgets',  allow: ['features', 'entities', 'shared'] },
+          { from: 'features', allow: ['entities', 'shared'] },
+          { from: 'entities', allow: ['shared'] },
+          { from: 'shared',   allow: [] },
+        ],
+      },
+    ],
+  },
+};
+
+// ----------------------------------------------------------------------
+
 export default [
   { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
   { ignores: ['*', '!src/', '!eslint.config.*'] },
@@ -191,4 +225,5 @@ export default [
   ...eslintTs.configs.recommended,
   reactPlugin.configs.flat.recommended,
   customConfig,
+  boundariesConfig,
 ];
