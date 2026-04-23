@@ -6,7 +6,7 @@ import { varAlpha } from 'minimal-shared/utils';
 
 import { Box, Card, useTheme } from '@shared/ui';
 
-import { fNumber, fPercent, fShortenNumber } from 'src/utils/format-number';
+import { fNumber, fPercent, fShortenNumber } from '@shared/lib/format-number';
 
 import { Iconify, SvgColor, Chart, useChart } from '@shared/ui';
 

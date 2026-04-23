@@ -14,7 +14,7 @@ import {
   timelineItemClasses,
 } from '@shared/ui';
 
-import { fDateTime } from 'src/utils/format-time';
+import { fDateTime } from '@shared/lib/format-time';
 
 // ----------------------------------------------------------------------
 

@@ -27,8 +27,6 @@ export default defineConfig({
       { find: '@features', replacement: path.resolve(process.cwd(), 'src/features') },
       { find: '@entities', replacement: path.resolve(process.cwd(), 'src/entities') },
       { find: '@shared',   replacement: path.resolve(process.cwd(), 'src/shared') },
-      // Legacy alias — keep until Task 11 removes old directories
-      { find: /^src(.+)/, replacement: path.resolve(process.cwd(), 'src/$1') },
     ],
   },
   server: { port: PORT, host: true },

@@ -3,7 +3,7 @@ import type { ChartOptions } from '@shared/ui';
 
 import { Card, CardHeader, useTheme, alpha as hexAlpha } from '@shared/ui';
 
-import { fNumber } from 'src/utils/format-number';
+import { fNumber } from '@shared/lib/format-number';
 
 import { Chart, useChart } from '@shared/ui';
 

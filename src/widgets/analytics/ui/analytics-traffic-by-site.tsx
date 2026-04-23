@@ -4,7 +4,7 @@ import { varAlpha } from 'minimal-shared/utils';
 
 import { Box, Card, CardHeader, Typography } from '@shared/ui';
 
-import { fShortenNumber } from 'src/utils/format-number';
+import { fShortenNumber } from '@shared/lib/format-number';
 
 import { Iconify } from '@shared/ui';
 

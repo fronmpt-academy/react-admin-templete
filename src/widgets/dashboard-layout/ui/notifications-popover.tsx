@@ -19,7 +19,7 @@ import {
   ListItemButton,
 } from '@shared/ui';
 
-import { fToNow } from 'src/utils/format-time';
+import { fToNow } from '@shared/lib/format-time';
 
 import { Iconify, Scrollbar } from '@shared/ui';
 

@@ -3,7 +3,7 @@ import type { ChartOptions } from '@shared/ui';
 
 import { Card, Divider, useTheme, CardHeader } from '@shared/ui';
 
-import { fNumber } from 'src/utils/format-number';
+import { fNumber } from '@shared/lib/format-number';
 
 import { Chart, useChart, ChartLegends } from '@shared/ui';
 
