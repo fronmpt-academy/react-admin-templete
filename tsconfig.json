@@ -1,13 +1,10 @@
 {
   "compilerOptions": {
-    /* Bundler */
     "baseUrl": ".",
     "module": "ESNext",
     "jsx": "react-jsx",
     "allowJs": true,
     "resolveJsonModule": true,
-
-    /* Build */
     "target": "ES2020",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "moduleResolution": "bundler",
@@ -16,17 +13,19 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "isolatedModules": true,
-
-    /* Linting */
     "strict": true,
     "noEmit": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "paths": {
+      "@app/*":      ["src/app/*"],
+      "@pages/*":    ["src/pages/*"],
+      "@widgets/*":  ["src/widgets/*"],
+      "@features/*": ["src/features/*"],
+      "@entities/*": ["src/entities/*"],
+      "@shared/*":   ["src/shared/*"]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules"],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ]
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
