@@ -1,8 +1,16 @@
 import { useEffect } from 'react';
 
-import { Fab , Iconify } from '@shared/ui';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+
+import { dayjs } from '@shared/lib/date';
+import { Fab, Iconify } from '@shared/ui';
 import { usePathname } from '@shared/router';
 import { ThemeProvider } from '@shared/theme';
+import { AppQueryProvider } from '@shared/lib/query';
+import { AppNotifyProvider } from '@shared/lib/notify';
+
+import { AuthProvider } from '@entities/auth';
 
 import '@app/styles/global.css';
 
@@ -36,8 +44,20 @@ export default function App({ children }: AppProps) {
 
   return (
     <ThemeProvider>
-      {children}
-      {githubButton()}
+      <AppQueryProvider>
+        <AppNotifyProvider>
+          <LocalizationProvider
+            dateAdapter={AdapterDayjs}
+            dateLibInstance={dayjs}
+            adapterLocale="ko"
+          >
+            <AuthProvider>
+              {children}
+              {githubButton()}
+            </AuthProvider>
+          </LocalizationProvider>
+        </AppNotifyProvider>
+      </AppQueryProvider>
     </ThemeProvider>
   );
 }

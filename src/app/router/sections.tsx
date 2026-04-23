@@ -1,10 +1,11 @@
 import type { RouteObject } from 'react-router';
 
 import { lazy, Suspense } from 'react';
-import { Outlet } from 'react-router-dom';
 import { varAlpha } from 'minimal-shared/utils';
+import { Outlet, Navigate } from 'react-router-dom';
 
-import { Box , LinearProgress, linearProgressClasses } from '@shared/ui';
+import { AuthGuard, GuestGuard } from '@shared/router/components';
+import { Box, LinearProgress, linearProgressClasses } from '@shared/ui';
 
 import { AuthLayout } from '@widgets/auth-layout';
 import { DashboardLayout } from '@widgets/dashboard-layout';
@@ -15,7 +16,11 @@ export const DashboardPage = lazy(() => import('@pages/dashboard'));
 export const BlogPage = lazy(() => import('@pages/blog'));
 export const UserPage = lazy(() => import('@pages/user'));
 export const SignInPage = lazy(() => import('@pages/sign-in'));
+export const SignUpPage = lazy(() => import('@pages/sign-up'));
+export const ForgotPasswordPage = lazy(() => import('@pages/forgot-password'));
 export const ProductsPage = lazy(() => import('@pages/products'));
+export const ClientsPage = lazy(() => import('@pages/clients'));
+export const TransactionsPage = lazy(() => import('@pages/transactions'));
 export const Page404 = lazy(() => import('@pages/not-found'));
 
 const renderFallback = () => (
@@ -41,26 +46,37 @@ const renderFallback = () => (
 export const routesSection: RouteObject[] = [
   {
     element: (
-      <DashboardLayout>
-        <Suspense fallback={renderFallback()}>
-          <Outlet />
-        </Suspense>
-      </DashboardLayout>
+      <AuthGuard>
+        <DashboardLayout>
+          <Suspense fallback={renderFallback()}>
+            <Outlet />
+          </Suspense>
+        </DashboardLayout>
+      </AuthGuard>
     ),
     children: [
-      { index: true, element: <DashboardPage /> },
+      { index: true, element: <Navigate to="/dashboard" replace /> },
+      { path: 'dashboard', element: <DashboardPage /> },
+      { path: 'clients', element: <ClientsPage /> },
+      { path: 'transactions', element: <TransactionsPage /> },
       { path: 'user', element: <UserPage /> },
       { path: 'products', element: <ProductsPage /> },
       { path: 'blog', element: <BlogPage /> },
     ],
   },
   {
-    path: 'sign-in',
     element: (
-      <AuthLayout>
-        <SignInPage />
-      </AuthLayout>
+      <GuestGuard>
+        <AuthLayout>
+          <Outlet />
+        </AuthLayout>
+      </GuestGuard>
     ),
+    children: [
+      { path: 'sign-in', element: <SignInPage /> },
+      { path: 'sign-up', element: <SignUpPage /> },
+      { path: 'forgot-password', element: <ForgotPasswordPage /> },
+    ],
   },
   {
     path: '404',
