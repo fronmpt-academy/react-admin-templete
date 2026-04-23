@@ -1,9 +1,12 @@
-import { Box, Typography } from '@shared/ui';
+import { CONFIG } from '@shared/config';
+
+import { ClientsPage } from './ui/clients-page';
 
 export default function Page() {
   return (
-    <Box p={3}>
-      <Typography variant="h4">거래처 관리</Typography>
-    </Box>
+    <>
+      <title>{`거래처 관리 - ${CONFIG.appName}`}</title>
+      <ClientsPage />
+    </>
   );
 }
