@@ -56,6 +56,13 @@ export { alpha, styled, useTheme } from '@mui/material/styles';
 export { Autocomplete, autocompleteClasses } from '@mui/material';
 export { LinearProgress, linearProgressClasses } from '@mui/material';
 export { List, ListItem, ListItemText, ListSubheader, ListItemAvatar, ListItemButton } from '@mui/material';
+export {
+  Dialog,
+  DialogTitle,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+} from '@mui/material';
 export { Table, TableRow, TableBody, TableCell, TableHead, TableContainer, TableSortLabel, TablePagination } from '@mui/material';
 // ─── MUI Lab components ───────────────────────────────────────────────────────
 export {
