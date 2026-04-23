@@ -1,9 +1,12 @@
-import { Box, Typography } from '@shared/ui';
+import { CONFIG } from '@shared/config';
+
+import { TransactionsPage } from './ui/transactions-page';
 
 export default function Page() {
   return (
-    <Box p={3}>
-      <Typography variant="h4">거래 관리</Typography>
-    </Box>
+    <>
+      <title>{`거래 관리 - ${CONFIG.appName}`}</title>
+      <TransactionsPage />
+    </>
   );
 }
