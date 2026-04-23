@@ -92,16 +92,20 @@ src/sections/blog/post-item.tsx
   → entities/post/ui/
 
 src/sections/error/not-found-view.tsx
-  → features/error/ui/
+  → pages/not-found/ui/not-found-view.tsx
+  (에러 뷰는 페이지 레이어의 UI 세그먼트에 위치 — features는 사용자 인터랙션에 해당하므로 부적합)
 
 src/routes/sections.tsx
-  → app/router/
+  → app/router/sections.tsx
+  (라우트 정의 — "어떤 경로가 어떤 페이지를 렌더링하는가"는 app 레이어 책임)
 
 src/routes/hooks/*
   → shared/router/hooks/
+  (재사용 가능한 라우터 유틸리티 훅 — 어느 레이어에서도 사용 가능)
 
 src/routes/components/*
   → shared/router/components/
+  (RouterLink, ErrorBoundary 등 재사용 가능한 라우터 컴포넌트)
 
 src/theme/*
   → shared/theme/
@@ -282,6 +286,8 @@ src/
 │   ├── sign-in/
 │   │   └── index.tsx
 │   └── not-found/
+│       ├── ui/
+│       │   └── not-found-view.tsx
 │       └── index.tsx
 ├── widgets/
 │   ├── dashboard-layout/
@@ -343,10 +349,6 @@ src/
 │   │   │   ├── post-search.tsx
 │   │   │   └── post-sort.tsx
 │   │   └── index.ts
-│   └── error/
-│       ├── ui/
-│       │   └── not-found-view.tsx
-│       └── index.ts
 ├── entities/
 │   ├── user/
 │   │   ├── ui/
