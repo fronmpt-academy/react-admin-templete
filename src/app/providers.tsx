@@ -1,14 +1,10 @@
-import '@app/styles/global.css';
-
 import { useEffect } from 'react';
 
-import { Fab } from '@shared/ui';
-
+import { Fab , Iconify } from '@shared/ui';
 import { usePathname } from '@shared/router';
-
 import { ThemeProvider } from '@shared/theme';
 
-import { Iconify } from '@shared/ui';
+import '@app/styles/global.css';
 
 // ----------------------------------------------------------------------
 

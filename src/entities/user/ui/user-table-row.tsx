@@ -2,17 +2,17 @@ import { useState, useCallback } from 'react';
 
 import {
   Box,
+  Label,
   Avatar,
   Popover,
+  Iconify,
   TableRow,
   Checkbox,
   MenuList,
+  MenuItem,
   TableCell,
   IconButton,
-  MenuItem,
   menuItemClasses,
-  Label,
-  Iconify,
 } from '@shared/ui';
 
 import type { UserProps } from '../model/types';

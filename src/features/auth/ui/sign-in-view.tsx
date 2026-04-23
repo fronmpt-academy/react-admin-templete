@@ -1,19 +1,16 @@
 import { useState, useCallback } from 'react';
 
-import {
-  Box,
+import { useRouter } from '@shared/router';
+import { Box ,
   Link,
   Button,
+  Iconify,
   Divider,
   TextField,
   IconButton,
   Typography,
   InputAdornment,
 } from '@shared/ui';
-
-import { useRouter } from '@shared/router';
-
-import { Iconify } from '@shared/ui';
 
 // ----------------------------------------------------------------------
 
@@ -101,7 +98,7 @@ export function SignInView() {
             color: 'text.secondary',
           }}
         >
-          Don't have an account?
+          Don&apos;t have an account?
           <Link variant="subtitle2" sx={{ ml: 0.5 }}>
             Get started
           </Link>

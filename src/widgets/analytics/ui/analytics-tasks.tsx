@@ -4,22 +4,20 @@ import type { CardProps } from '@mui/material/Card';
 import { useState } from 'react';
 import { usePopover } from 'minimal-shared/hooks';
 
-import {
-  Box,
-  Card,
+import { Box, Card ,
   Stack,
+  Iconify,
   Popover,
   Divider,
   MenuList,
   Checkbox,
+  MenuItem,
+  Scrollbar,
   IconButton,
   CardHeader,
-  FormControlLabel,
-  MenuItem,
   menuItemClasses,
+  FormControlLabel,
 } from '@shared/ui';
-
-import { Iconify, Scrollbar } from '@shared/ui';
 
 // ----------------------------------------------------------------------
 

@@ -3,18 +3,16 @@ import type { BoxProps } from '@mui/material/Box';
 import { useState, useCallback } from 'react';
 import { varAlpha } from 'minimal-shared/utils';
 
-import {
-  Box,
+import { Box ,
   Slide,
   Input,
   Button,
+  Iconify,
   useTheme,
   IconButton,
   InputAdornment,
   ClickAwayListener,
 } from '@shared/ui';
-
-import { Iconify } from '@shared/ui';
 
 // ----------------------------------------------------------------------
 

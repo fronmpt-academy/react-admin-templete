@@ -1,12 +1,14 @@
-import { useState, useCallback } from 'react';
-
-import { Box, Grid, Button, Typography, Pagination, Iconify } from '@shared/ui';
-import { DashboardContent } from '@widgets/dashboard-layout';
-
-import { PostItem } from '@entities/post';
 import type { IPostItem } from '@entities/post';
 
+import { useState, useCallback } from 'react';
+
+import { Box, Grid, Button, Iconify, Typography, Pagination } from '@shared/ui';
+
+import { PostItem } from '@entities/post';
+
 import { PostSort, PostSearch } from '@features/blog';
+
+import { DashboardContent } from '@widgets/dashboard-layout';
 
 // ----------------------------------------------------------------------
 

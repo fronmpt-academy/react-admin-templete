@@ -2,16 +2,14 @@ import type { ButtonProps } from '@mui/material/Button';
 
 import { useState, useCallback } from 'react';
 
-import {
-  Button,
+import { Button ,
+  Iconify,
   Popover,
   MenuList,
-  Typography,
   MenuItem,
+  Typography,
   menuItemClasses,
 } from '@shared/ui';
-
-import { Iconify } from '@shared/ui';
 
 // ----------------------------------------------------------------------
 

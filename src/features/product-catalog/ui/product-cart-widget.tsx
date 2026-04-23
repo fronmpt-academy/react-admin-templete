@@ -1,10 +1,7 @@
 import type { BoxProps } from '@mui/material/Box';
 
-import { Box, Badge } from '@shared/ui';
-
 import { RouterLink } from '@shared/router';
-
-import { Iconify } from '@shared/ui';
+import { Box , Badge, Iconify } from '@shared/ui';
 
 // ----------------------------------------------------------------------
 

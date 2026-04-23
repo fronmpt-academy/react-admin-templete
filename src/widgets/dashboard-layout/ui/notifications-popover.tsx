@@ -2,15 +2,16 @@ import type { IconButtonProps } from '@mui/material/IconButton';
 
 import { useState, useCallback } from 'react';
 
-import {
-  Box,
-  List,
+import { fToNow } from '@shared/lib/format-time';
+import { Box, List ,
   Badge,
   Button,
   Avatar,
+  Iconify,
   Divider,
   Tooltip,
   Popover,
+  Scrollbar,
   Typography,
   IconButton,
   ListItemText,
@@ -18,10 +19,6 @@ import {
   ListItemAvatar,
   ListItemButton,
 } from '@shared/ui';
-
-import { fToNow } from '@shared/lib/format-time';
-
-import { Iconify, Scrollbar } from '@shared/ui';
 
 // ----------------------------------------------------------------------
 

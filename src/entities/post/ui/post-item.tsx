@@ -1,21 +1,18 @@
+import type { IconifyName } from '@shared/ui';
 import type { CardProps } from '@mui/material/Card';
 
 import { varAlpha } from 'minimal-shared/utils';
 
+import { fDate , fShortenNumber } from '@shared/lib';
 import {
   Box,
   Link,
   Card,
   Avatar,
-  Typography,
   Iconify,
   SvgColor,
+  Typography,
 } from '@shared/ui';
-
-import type { IconifyName } from '@shared/ui';
-
-import { fDate } from '@shared/lib';
-import { fShortenNumber } from '@shared/lib';
 
 import type { IPostItem } from '../model/types';
 

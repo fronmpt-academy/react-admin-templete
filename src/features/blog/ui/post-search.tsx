@@ -1,10 +1,7 @@
+import type { IPostItem } from '@entities/post';
 import type { Theme, SxProps } from '@mui/material/styles';
 
-import { TextField, InputAdornment, Autocomplete, autocompleteClasses } from '@shared/ui';
-
-import { Iconify } from '@shared/ui';
-
-import type { IPostItem } from '@entities/post';
+import { Iconify , TextField, Autocomplete, InputAdornment, autocompleteClasses } from '@shared/ui';
 
 // ----------------------------------------------------------------------
 

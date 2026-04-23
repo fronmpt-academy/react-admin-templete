@@ -1,20 +1,19 @@
 import type { CardProps } from '@mui/material/Card';
 import type { TimelineItemProps } from '@mui/lab/TimelineItem';
 
+import { fDateTime } from '@shared/lib/format-time';
 import {
   Card,
   Timeline,
-  TimelineDot,
   Typography,
   CardHeader,
+  TimelineDot,
+  TimelineItem,
   TimelineContent,
   TimelineSeparator,
   TimelineConnector,
-  TimelineItem,
   timelineItemClasses,
 } from '@shared/ui';
-
-import { fDateTime } from '@shared/lib/format-time';
 
 // ----------------------------------------------------------------------
 

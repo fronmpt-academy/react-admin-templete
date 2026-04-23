@@ -3,9 +3,7 @@ import type { ButtonBaseProps } from '@mui/material/ButtonBase';
 import { useState, useCallback } from 'react';
 import { varAlpha } from 'minimal-shared/utils';
 
-import { Box, Popover, MenuList, ButtonBase, MenuItem, menuItemClasses } from '@shared/ui';
-
-import { Label, Iconify } from '@shared/ui';
+import { Box, Label , Iconify, Popover, MenuList, MenuItem, ButtonBase, menuItemClasses } from '@shared/ui';
 
 // ----------------------------------------------------------------------
 

@@ -1,4 +1,4 @@
-import {
+import { Iconify ,
   Tooltip,
   Toolbar,
   Typography,
@@ -6,8 +6,6 @@ import {
   OutlinedInput,
   InputAdornment,
 } from '@shared/ui';
-
-import { Iconify } from '@shared/ui';
 
 // ----------------------------------------------------------------------
 

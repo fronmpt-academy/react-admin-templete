@@ -1,14 +1,11 @@
+import type { ChartOptions } from '@shared/ui';
 import type { CardProps } from '@mui/material/Card';
 import type { PaletteColorKey } from '@shared/theme';
-import type { ChartOptions } from '@shared/ui';
 
 import { varAlpha } from 'minimal-shared/utils';
 
-import { Box, Card, useTheme } from '@shared/ui';
-
 import { fNumber, fPercent, fShortenNumber } from '@shared/lib/format-number';
-
-import { Iconify, SvgColor, Chart, useChart } from '@shared/ui';
+import { Box, Card, Chart , Iconify, useTheme, SvgColor, useChart } from '@shared/ui';
 
 // ----------------------------------------------------------------------
 

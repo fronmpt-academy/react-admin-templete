@@ -2,6 +2,8 @@ import type { IconButtonProps } from '@mui/material/IconButton';
 
 import { useState, useCallback } from 'react';
 
+import { _myAccount } from '@shared/api';
+import { useRouter, usePathname } from '@shared/router';
 import {
   Box,
   Button,
@@ -9,15 +11,11 @@ import {
   Popover,
   Divider,
   MenuList,
+  MenuItem,
   Typography,
   IconButton,
-  MenuItem,
   menuItemClasses,
 } from '@shared/ui';
-
-import { useRouter, usePathname } from '@shared/router';
-
-import { _myAccount } from '@shared/api';
 
 // ----------------------------------------------------------------------
 

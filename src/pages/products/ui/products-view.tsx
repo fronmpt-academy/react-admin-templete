@@ -1,14 +1,15 @@
+import type { FiltersProps } from '@features/product-catalog';
+
 import { useState, useCallback } from 'react';
 
-import { Box, Grid, Pagination, Typography } from '@shared/ui';
 import { _products } from '@shared/api';
-import { DashboardContent } from '@widgets/dashboard-layout';
+import { Box, Grid, Pagination, Typography } from '@shared/ui';
 
 import { ProductItem } from '@entities/product';
-import type { ProductItemProps } from '@entities/product';
 
-import { ProductSort, CartIcon, ProductFilters } from '@features/product-catalog';
-import type { FiltersProps } from '@features/product-catalog';
+import { CartIcon, ProductSort, ProductFilters } from '@features/product-catalog';
+
+import { DashboardContent } from '@widgets/dashboard-layout';
 
 // ----------------------------------------------------------------------
 

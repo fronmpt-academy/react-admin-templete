@@ -3,9 +3,8 @@ import type { ContainerProps } from '@mui/material/Container';
 
 import { mergeClasses } from 'minimal-shared/utils';
 
-import { Container } from '@shared/ui';
+import { Container , layoutClasses } from '@shared/ui';
 
-import { layoutClasses } from '@shared/ui';
 
 // ----------------------------------------------------------------------
 

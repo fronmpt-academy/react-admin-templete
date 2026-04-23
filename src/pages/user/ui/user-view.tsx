@@ -1,33 +1,35 @@
-import { useState, useCallback } from 'react';
+import type { UserProps } from '@entities/user';
 
+import { useState } from 'react';
+
+import { _users } from '@shared/api';
 import {
   Box,
   Card,
   Table,
   Button,
+  Iconify,
   TableBody,
+  Scrollbar,
   Typography,
   TableContainer,
   TablePagination,
-  Iconify,
-  Scrollbar,
 } from '@shared/ui';
-import { _users } from '@shared/api';
-import { DashboardContent } from '@widgets/dashboard-layout';
 
 import { UserTableRow } from '@entities/user';
-import type { UserProps } from '@entities/user';
 
 import {
   useTable,
   emptyRows,
   applyFilter,
-  getComparator,
   TableNoData,
+  getComparator,
   UserTableHead,
   TableEmptyRows,
   UserTableToolbar,
 } from '@features/user-management';
+
+import { DashboardContent } from '@widgets/dashboard-layout';
 
 // ----------------------------------------------------------------------
 

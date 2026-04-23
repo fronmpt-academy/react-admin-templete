@@ -1,5 +1,4 @@
-import { Label } from '@shared/ui';
-import { SvgColor } from '@shared/ui';
+import { Label , SvgColor } from '@shared/ui';
 
 // ----------------------------------------------------------------------
 

@@ -1,22 +1,14 @@
 import type { CSSObject, Breakpoint } from '@mui/material/styles';
-
-import type { AuthContentProps } from './content';
-import type { MainSectionProps } from '@shared/ui';
-import type { HeaderSectionProps } from '@shared/ui';
-import type { LayoutSectionProps } from '@shared/ui';
+import type { MainSectionProps , HeaderSectionProps , LayoutSectionProps } from '@shared/ui';
 
 import { merge } from 'es-toolkit';
 
-import { Box, Link, Alert } from '@shared/ui';
-
 import { RouterLink } from '@shared/router';
-
-import { Logo } from '@shared/ui';
+import { Box , Logo , Link , Alert , MainSection, LayoutSection, HeaderSection } from '@shared/ui';
 
 import { AuthContent } from './content';
-import { MainSection } from '@shared/ui';
-import { LayoutSection } from '@shared/ui';
-import { HeaderSection } from '@shared/ui';
+
+import type { AuthContentProps } from './content';
 
 // ----------------------------------------------------------------------
 

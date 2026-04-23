@@ -1,14 +1,13 @@
+import { fCurrency } from '@shared/lib';
 import {
   Box,
   Link,
   Card,
   Stack,
-  Typography,
   Label,
+  Typography,
   ColorPreview,
 } from '@shared/ui';
-
-import { fCurrency } from '@shared/lib';
 
 import type { ProductItemProps } from '../model/types';
 

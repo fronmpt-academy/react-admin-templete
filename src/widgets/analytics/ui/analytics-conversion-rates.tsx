@@ -1,11 +1,8 @@
-import type { CardProps } from '@mui/material/Card';
 import type { ChartOptions } from '@shared/ui';
-
-import { Card, CardHeader, useTheme, alpha as hexAlpha } from '@shared/ui';
+import type { CardProps } from '@mui/material/Card';
 
 import { fNumber } from '@shared/lib/format-number';
-
-import { Chart, useChart } from '@shared/ui';
+import { Card, Chart , useChart, useTheme, CardHeader, alpha as hexAlpha } from '@shared/ui';
 
 // ----------------------------------------------------------------------
 

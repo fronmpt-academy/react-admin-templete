@@ -3,7 +3,7 @@ import type { IconButtonProps } from '@mui/material/IconButton';
 import { useState, useCallback } from 'react';
 import { usePopover } from 'minimal-shared/hooks';
 
-import { Box, Popover, MenuList, IconButton, MenuItem, menuItemClasses } from '@shared/ui';
+import { Box, Popover, MenuList, MenuItem, IconButton, menuItemClasses } from '@shared/ui';
 
 // ----------------------------------------------------------------------
 

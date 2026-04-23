@@ -3,12 +3,8 @@ import type { Theme, SxProps, Breakpoint } from '@mui/material/styles';
 import { useEffect } from 'react';
 import { varAlpha } from 'minimal-shared/utils';
 
-import { Box, ListItem, useTheme, ListItemButton, Drawer, drawerClasses } from '@shared/ui';
-
-import { usePathname } from '@shared/router';
-import { RouterLink } from '@shared/router';
-
-import { Logo, Scrollbar } from '@shared/ui';
+import { RouterLink , usePathname } from '@shared/router';
+import { Box, Logo , Drawer, ListItem, useTheme, Scrollbar, drawerClasses, ListItemButton } from '@shared/ui';
 
 import { NavUpgrade } from './nav-upgrade';
 import { WorkspacesPopover } from './workspaces-popover';

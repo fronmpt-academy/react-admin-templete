@@ -1,29 +1,21 @@
 import type { Breakpoint } from '@mui/material/styles';
-
-import type { MainSectionProps } from '@shared/ui';
-import type { HeaderSectionProps } from '@shared/ui';
-import type { LayoutSectionProps } from '@shared/ui';
+import type { MainSectionProps , HeaderSectionProps , LayoutSectionProps } from '@shared/ui';
 
 import { merge } from 'es-toolkit';
 import { useBoolean } from 'minimal-shared/hooks';
 
-import { Box, Alert, useTheme } from '@shared/ui';
-
 import { _langs, _notifications } from '@shared/api';
+import { Box , Alert , useTheme , MainSection , layoutClasses, HeaderSection, LayoutSection } from '@shared/ui';
 
-import { NavMobile, NavDesktop } from './nav';
-import { layoutClasses } from '@shared/ui';
-import { _account } from '../model/nav-config-account';
-import { dashboardLayoutVars } from './css-vars';
-import { navData } from '../model/nav-config-dashboard';
-import { MainSection } from '@shared/ui';
 import { Searchbar } from './searchbar';
-import { _workspaces } from '../model/nav-config-workspace';
 import { MenuButton } from './menu-button';
-import { HeaderSection } from '@shared/ui';
-import { LayoutSection } from '@shared/ui';
+import { NavMobile, NavDesktop } from './nav';
+import { dashboardLayoutVars } from './css-vars';
 import { AccountPopover } from './account-popover';
 import { LanguagePopover } from './language-popover';
+import { _account } from '../model/nav-config-account';
+import { navData } from '../model/nav-config-dashboard';
+import { _workspaces } from '../model/nav-config-workspace';
 import { NotificationsPopover } from './notifications-popover';
 
 // ----------------------------------------------------------------------

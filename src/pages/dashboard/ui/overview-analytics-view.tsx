@@ -1,7 +1,7 @@
 import { Grid, Typography } from '@shared/ui';
-import { DashboardContent } from '@widgets/dashboard-layout';
 import { _posts, _tasks, _traffic, _timeline } from '@shared/api';
 
+import { DashboardContent } from '@widgets/dashboard-layout';
 import {
   AnalyticsNews,
   AnalyticsTasks,

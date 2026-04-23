@@ -2,9 +2,10 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router';
 
+import { ErrorBoundary } from '@shared/router';
+
 import App from '@app/providers';
 import { routesSection } from '@app/router/sections';
-import { ErrorBoundary } from '@shared/router';
 
 // ----------------------------------------------------------------------
 

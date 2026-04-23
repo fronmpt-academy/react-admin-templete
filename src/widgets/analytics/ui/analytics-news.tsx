@@ -1,11 +1,8 @@
 import type { BoxProps } from '@mui/material/Box';
 import type { CardProps } from '@mui/material/Card';
 
-import { Box, Link, Card, Button, Avatar, CardHeader, ListItemText } from '@shared/ui';
-
 import { fToNow } from '@shared/lib/format-time';
-
-import { Iconify, Scrollbar } from '@shared/ui';
+import { Box, Link , Card, Button, Avatar, Iconify, Scrollbar, CardHeader, ListItemText } from '@shared/ui';
 
 // ----------------------------------------------------------------------
 

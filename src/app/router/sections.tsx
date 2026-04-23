@@ -4,8 +4,7 @@ import { lazy, Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 import { varAlpha } from 'minimal-shared/utils';
 
-import { Box } from '@shared/ui';
-import { LinearProgress, linearProgressClasses } from '@shared/ui';
+import { Box , LinearProgress, linearProgressClasses } from '@shared/ui';
 
 import { AuthLayout } from '@widgets/auth-layout';
 import { DashboardLayout } from '@widgets/dashboard-layout';

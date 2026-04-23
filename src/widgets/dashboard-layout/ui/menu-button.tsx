@@ -1,8 +1,6 @@
 import type { IconButtonProps } from '@mui/material/IconButton';
 
-import { IconButton } from '@shared/ui';
-
-import { Iconify } from '@shared/ui';
+import { Iconify , IconButton } from '@shared/ui';
 
 // ----------------------------------------------------------------------
 

@@ -2,11 +2,8 @@ import type { CardProps } from '@mui/material/Card';
 
 import { varAlpha } from 'minimal-shared/utils';
 
-import { Box, Card, CardHeader, Typography } from '@shared/ui';
-
 import { fShortenNumber } from '@shared/lib/format-number';
-
-import { Iconify } from '@shared/ui';
+import { Box , Card, Iconify, CardHeader, Typography } from '@shared/ui';
 
 // ----------------------------------------------------------------------
 

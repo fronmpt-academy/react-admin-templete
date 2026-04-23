@@ -1,23 +1,19 @@
-import {
-  Box,
-  Stack,
-  Radio,
+import { Box , Stack , Radio ,
   Badge,
   Button,
   Drawer,
   Rating,
+  Iconify,
   Divider,
   Checkbox,
+  Scrollbar,
   FormGroup,
   RadioGroup,
   Typography,
   IconButton,
+  ColorPicker,
   FormControlLabel,
 } from '@shared/ui';
-
-import { Iconify } from '@shared/ui';
-import { Scrollbar } from '@shared/ui';
-import { ColorPicker } from '@shared/ui';
 
 // ----------------------------------------------------------------------
 
