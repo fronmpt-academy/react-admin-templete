@@ -9,6 +9,7 @@ export * from './color-utils';
 export * from './layout-core';
 export { Box } from '@mui/material';
 export { Fab } from '@mui/material';
+export { Chip } from '@mui/material';
 export { Grid } from '@mui/material';
 export { Link } from '@mui/material';
 // ─── MUI Material components ─────────────────────────────────────────────────
