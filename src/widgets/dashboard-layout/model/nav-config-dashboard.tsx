@@ -1,4 +1,4 @@
-import { Label , SvgColor } from '@shared/ui';
+import { SvgColor } from '@shared/ui';
 
 // ----------------------------------------------------------------------
 
@@ -26,30 +26,5 @@ export const navData = [
     title: '거래',
     path: '/transactions',
     icon: icon('ic-cart'),
-  },
-  {
-    title: 'User',
-    path: '/user',
-    icon: icon('ic-user'),
-  },
-  {
-    title: 'Product',
-    path: '/products',
-    icon: icon('ic-cart'),
-    info: (
-      <Label color="error" variant="inverted">
-        +3
-      </Label>
-    ),
-  },
-  {
-    title: 'Blog',
-    path: '/blog',
-    icon: icon('ic-blog'),
-  },
-  {
-    title: 'Not found',
-    path: '/404',
-    icon: icon('ic-disabled'),
   },
 ];
